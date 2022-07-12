@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "30019809331",
+    "project_id": "break-time-f6c37",
+    "storage_bucket": "break-time-f6c37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30019809331:android:cda07201a2e615f34cf346",
+        "android_client_info": {
+          "package_name": "com.sahelpixels.break_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30019809331-uuui8o255a31qikrb9gfi1v148omqal0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeSoPZ5aGbU3gpqtXEfznFlTlGtBEJ1U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30019809331-uuui8o255a31qikrb9gfi1v148omqal0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:theme/data/color_data.dart';
+import 'package:theme/src/data/color_data.dart';
 
 const _basePath = 'package/theme';
 const _klasik = '${_basePath}Klasik';

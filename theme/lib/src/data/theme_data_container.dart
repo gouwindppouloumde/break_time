@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:theme/data/color_data.dart';
-import 'package:theme/data/size_data.dart';
-import 'package:theme/data/typography_data.dart';
+import 'package:theme/src/data/color_data.dart';
+import 'package:theme/src/data/size_data.dart';
+import 'package:theme/src/data/typography_data.dart';
 
 class ThemeDataContainer {
   const ThemeDataContainer({

@@ -3,7 +3,7 @@ import 'package:break_time/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'views/my_material.dart';
+import 'package:theme/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,15 +18,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Break-time',
-        home: StreamBuilder<User?>(
-          stream: FirebaseAuth.instance.userChanges(),
-          builder: (BuildContext context, snapshot) {
-            return (snapshot.hasData)
-                ? const MainController()
-                : const AuthController();
-          },
-        ));
+      debugShowCheckedModeBanner: false,
+      title: 'Break-time',
+      builder: (context, child) {
+        final themeData = ThemeDataContainer.main();
+        return ThemeResolver(
+          data: themeData,
+          child: Theme(
+              data: themeData.theme,
+              child: StreamBuilder<User?>(
+                stream: FirebaseAuth.instance.userChanges(),
+                builder: (BuildContext context, snapshot) {
+                  return (snapshot.hasData)
+                      ? const MainController()
+                      : const AuthController();
+                },
+              )),
+        );
+      },
+    );
   }
 }

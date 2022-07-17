@@ -6,7 +6,7 @@ const _klasik = '${_basePath}Klasik';
 const _manrope = '${_basePath}Manrope';
 
 class TypographyData {
-  const TypographyData({
+   TypographyData({
     required this.displayLarge,
     required this.headlineLarge,
     required this.headlineMedium,
@@ -74,7 +74,7 @@ class TypographyData {
       );
 
   static TextTheme getMainTextTheme(ColorData colors) {
-    return const TextTheme().copyWith(
+    return TextTheme().copyWith(
       displayLarge: TypographyData.main(colors).displayLarge,
       headlineLarge: TypographyData.main(colors).headlineLarge,
       headlineMedium: TypographyData.main(colors).headlineMedium,

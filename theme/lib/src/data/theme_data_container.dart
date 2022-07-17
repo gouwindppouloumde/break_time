@@ -4,7 +4,7 @@ import 'package:theme/src/data/size_data.dart';
 import 'package:theme/src/data/typography_data.dart';
 
 class ThemeDataContainer {
-  const ThemeDataContainer({
+   ThemeDataContainer({
     required this.theme,
     required this.colors,
     required this.sizes,

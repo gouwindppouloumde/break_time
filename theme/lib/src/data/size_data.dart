@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class SizeData {
-  const SizeData({
+   SizeData({
     required this.xs,
     required this.s,
     required this.m,
@@ -10,7 +10,7 @@ class SizeData {
     required this.xl,
   });
 
-  factory SizeData.main() => const SizeData(xs: 5, s: 10, m: 15, l: 20, xl: 30);
+  factory SizeData.main() => SizeData(xs: 5, s: 10, m: 15, l: 20, xl: 30);
 
   final double xs;
   final double s;
@@ -22,7 +22,7 @@ class SizeData {
 }
 
 class ThemeEdgeInsetsSizeData {
-  const ThemeEdgeInsetsSizeData(this._spacing);
+ ThemeEdgeInsetsSizeData(this._spacing);
   final SizeData _spacing;
   EdgeInsets get xs => EdgeInsets.all(_spacing.xs);
   EdgeInsets get s => EdgeInsets.all(_spacing.s);

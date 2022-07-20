@@ -14,3 +14,5 @@ AssetImage hautTalons = const AssetImage('assets/haut_talos.png');
 AssetImage joueurs = const AssetImage('assets/joueurs.png');
 AssetImage trio = const AssetImage('assets/trio.png');
 AssetImage xxl = const AssetImage('assets/xxl.png');
+AssetImage fastCoffee = const AssetImage('assets/fast_coffee.png');
+AssetImage theBande = const AssetImage('assets/trois-mousquetaires.jpg');

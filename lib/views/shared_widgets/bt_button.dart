@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class BtButton extends ElevatedButton {
   BtButton(
       {required String title,
-      double fontSize = 12,
       FontWeight fontWeight = FontWeight.normal,
       backColor = Colors.redAccent,
       textColor = Colors.white,
+      double fontSize = 12,
       double elevation = 0.0,
       double radius = 0.0,
       required double height,

@@ -9,6 +9,8 @@ class BtButton extends ElevatedButton {
       double fontSize = 12,
       double elevation = 0.0,
       double radius = 0.0,
+      borderColor = Colors.transparent,
+      borderWidth = 0.0,
       required double height,
       required double width,
       required void Function() onPressed,
@@ -18,6 +20,7 @@ class BtButton extends ElevatedButton {
             child: Text(title),
             key: key,
             style: ElevatedButton.styleFrom(
+                side: BorderSide(color: borderColor, width: borderWidth),
                 primary: backColor,
                 onPrimary: textColor,
                 elevation: elevation,

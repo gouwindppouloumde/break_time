@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:break_time/views/my_material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -96,6 +97,8 @@ ou connectez-vous si vous êtes déjà inscrit
                         title: 'Login',
                         height: 40,
                         width: 50,
+                        borderColor: Colors.white,
+                        borderWidth: 1.5,
                         fontSize: 20,
                         onPressed: () {
                           setState(() {
@@ -114,6 +117,8 @@ ou connectez-vous si vous êtes déjà inscrit
                           textColor: Colors.white,
                           elevation: 0,
                           radius: 30.0,
+                          borderColor: Colors.white,
+                          borderWidth: 1.5,
                           title: 'Sign up',
                           height: 40,
                           width: 50,
@@ -131,7 +136,27 @@ ou connectez-vous si vous êtes déjà inscrit
                   ],
                 ),
                 const SizedBox(
-                  height: 40.0,
+                  height: 30.0,
+                ),
+                OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    side: const BorderSide(color: Colors.redAccent, width: 1.5),
+                    textStyle: const TextStyle(color: Colors.white),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                  ),
+                  icon: const Icon(
+                    FontAwesomeIcons.google,
+                    color: Colors.white,
+                  ),
+                  label: const Text(
+                    'Continue with google',
+                    style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  ),
+                  onPressed: () {},
+                ),
+                const SizedBox(
+                  height: 30.0,
                 ),
               ],
             ),
@@ -265,14 +290,6 @@ class _SignUpFormState extends State<SignUpForm> {
           shrinkWrap: true,
           padding: const EdgeInsets.all(16.0),
           children: [
-            IconButton(
-              color: Colors.black54,
-              alignment: Alignment.topRight,
-              icon: const Icon(Icons.clear),
-              onPressed: () {
-                setState(() {});
-              },
-            ),
             TextFormField(
                 controller: _email,
                 decoration: const InputDecoration(
@@ -329,7 +346,7 @@ class _SignUpFormState extends State<SignUpForm> {
             ),
             CheckboxListTile(
                 title: const Text(
-                    'Check this case to confirm you are over 18 years old'),
+                    'Check this case to confirm you are over 15 years old'),
                 value: _requiredAge,
                 controlAffinity: ListTileControlAffinity.leading,
                 onChanged: (bool? value) {
